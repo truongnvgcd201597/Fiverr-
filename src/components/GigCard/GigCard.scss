@@ -1,0 +1,19 @@
+.gigCard {
+  width: 324px;
+  height: 370px;
+  border: 1px solid #e0e0e0;
+  margin-bottom: 20px;
+  text-decoration: none;
+  img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .gigCard__info {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}

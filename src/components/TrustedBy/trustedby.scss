@@ -1,0 +1,17 @@
+.trustedBy {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  span {
+    font-size: 18px;
+    color: #ccc;
+    font-weight: 700;
+    margin: 0 20px;
+  }
+  img {
+    width: 60px;
+    margin-right: 15px;
+    cursor: pointer;
+  }
+}
