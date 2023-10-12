@@ -1,0 +1,111 @@
+.gigs {
+  display: flex;
+  justify-content: center;
+
+  .container {
+    width: 1205px;
+    padding: 30px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    .breadcrumbs {
+      font-weight: 400;
+      color: #9e9e9e;
+      font-size: 14px;
+    }
+    p {
+      color: #999;
+      font-weight: 400;
+    }
+
+    .menu {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 30px;
+    }
+
+    .left {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: #555;
+      font-weight: 400;
+      input {
+        padding: 3px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        outline: none;
+
+        &::placeholder {
+          color: #ccc;
+        }
+      }
+
+      button {
+        padding: 5px 10px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        outline: none;
+        background-color: #fff;
+        color: #fff;
+        background-color: #1dbf73;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+          background-color: #ccc;
+          color: #fff;
+        }
+      }
+    }
+    .right {
+      display: flex;
+      align-items: center;
+      position: relative;
+      gap: 10px;
+      gap: 5px;
+      .sortBy {
+        color: #555;
+        font-weight: 400;
+      }
+      .sortType {
+        font-weight: 500;
+        &:hover {
+          color: #1dbf73;
+          cursor: pointer;
+        }
+      }
+      i {
+        &:hover {
+          cursor: pointer;
+        }
+      }
+      .rightMenu {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 5px;
+        border: 0.5px solid lightgrey;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        right: 0;
+        position: absolute;
+        top: 25px;
+      }
+      span {
+        cursor: pointer;
+
+        &:hover {
+          color: #1dbf73;
+        }
+      }
+    }
+  }
+  .cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+}

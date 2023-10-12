@@ -1,25 +1,22 @@
 import { Link } from "react-router-dom";
-import "./Orders.scss";
-
-export const Orders = () => {
-  const currentUser = {
-    id: 1,
-    username: "Anna",
-    isSeller: true,
-  };
+import "./myGigs.scss";
+const MyGigs = () => {
   return (
-    <div className="orders">
+    <div className="myGigs">
       <div className="container">
         <div className="title">
-          <h1>Orders</h1>
+          <h1>Gigs</h1>
+          <Link to="add">
+            <button>Add New Gig</button>
+          </Link>
         </div>
         <table>
           <tr>
             <th>Images</th>
             <th>Title</th>
             <th>Price</th>
-            <th>{currentUser.isSeller ? "Buyer" : "Seller"}</th>
-            <th>Contact</th>
+            <th>Orders</th>
+            <th>Action</th>
           </tr>
           <tr>
             <td>
@@ -31,9 +28,9 @@ export const Orders = () => {
             </td>
             <td>Gig1</td>
             <td>100</td>
-            <td>{currentUser.username}</td>
+            <td>0</td>
             <td>
-              <i class="fa-solid fa-envelope"></i>
+              <i className="fas fa-trash"></i>
             </td>
           </tr>
           <tr>
@@ -46,9 +43,9 @@ export const Orders = () => {
             </td>
             <td>Gig1</td>
             <td>100</td>
-            <td>{currentUser.username}</td>
+            <td>0</td>
             <td>
-              <i class="fa-solid fa-envelope"></i>
+              <i className="fas fa-trash"></i>
             </td>
           </tr>
           <tr>
@@ -61,9 +58,9 @@ export const Orders = () => {
             </td>
             <td>Gig1</td>
             <td>100</td>
-            <td>{currentUser.username}</td>
+            <td>0</td>
             <td>
-              <i class="fa-solid fa-envelope"></i>
+              <i className="fas fa-trash"></i>
             </td>
           </tr>
           <tr>
@@ -76,9 +73,9 @@ export const Orders = () => {
             </td>
             <td>Gig1</td>
             <td>100</td>
-            <td>{currentUser.username}</td>
+            <td>0</td>
             <td>
-              <i class="fa-solid fa-envelope"></i>
+              <i className="fas fa-trash"></i>
             </td>
           </tr>
           <tr>
@@ -90,9 +87,9 @@ export const Orders = () => {
             </td>
             <td>Gig1</td>
             <td>100</td>
-            <td>{currentUser.username}</td>
+            <td>0</td>
             <td>
-              <i class="fa-solid fa-envelope"></i>
+              <i className="fas fa-trash"></i>
             </td>
           </tr>
         </table>
@@ -100,3 +97,5 @@ export const Orders = () => {
     </div>
   );
 };
+
+export default MyGigs;

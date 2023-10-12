@@ -10,6 +10,7 @@ import { Login } from "./pages/login/Login";
 import { Register } from "./pages/register/Register";
 import { Orders } from "./pages/orders/Orders";
 import { Add } from "./pages/add/Add";
+import MyGigs from "./pages/myGigs/myGigs";
 import "./App.scss";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
@@ -38,7 +39,11 @@ function App() {
           element: <Gigs />,
         },
         {
-          path: "/myGigs",
+          path: "/gig",
+          element: <Gig />,
+        },
+        {
+          path: "/gig/:id",
           element: <Gig />,
         },
         {
@@ -60,6 +65,10 @@ function App() {
         {
           path: "/gig/:id",
           element: <Gig />,
+        },
+        {
+          path: "/myGigs",
+          element: <MyGigs />,
         },
       ],
     },
